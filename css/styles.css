@@ -44,7 +44,7 @@ body {
 }
 
 .menu a {
-  position: relative; /* IMPORTANTE */
+  position: relative; 
   text-decoration: none;
   color: var(--on-surface-variant);
   font-weight: 500;
