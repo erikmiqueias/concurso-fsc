@@ -6,6 +6,7 @@
   box-sizing: border-box;
   font-family: "Inter", sans-serif;
 }
+
 body {
   background: var(--background);
 }
@@ -34,7 +35,7 @@ body {
   font-weight: 600;
   color: var(--on-surface);
   padding: 0%;
-  margin:0;
+  margin: 0;
 }
 .menu {
   display: flex;
@@ -44,7 +45,7 @@ body {
 }
 
 .menu a {
-  position: relative; 
+  position: relative;
   text-decoration: none;
   color: var(--on-surface-variant);
   font-weight: 500;
