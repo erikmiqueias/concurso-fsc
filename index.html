@@ -12,29 +12,31 @@
     <header class="header">
       <nav class="nav">
     
-       <div class="container nav-content">
+    <div class="nav-content">
+      <div class="container nav-inner">
 
-         <h1 class="logo">SummaryAI</h1>
+        <h1 class="logo">SummaryAI</h1>
 
-         <ul class="menu">
-          <li><a href="index.html" class="active">Home</a></li>
-          <li><a href="about.html" class="active">About</a></li>
-          <li><a href="contact.html" class="active">Contact</a></li>
+        <ul class="menu">
+          <li><a href="index.html" class="active" aria-current="page">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
         </ul>
 
         <div class="actions">
           <button class="login">Login</button>
           <button class="btn-primary">Get Started</button>
         </div>
-    </div>
 
+      </div>
+    </div>
   </nav>
 </header>
 
     <main>
       <!-- Hero section -->
       <section id="home" class="hero">
-        <div class="container-hero-content">
+        <div class="container hero-content">
           <div class="hero-txt">
             <h2>
               Your Documents,<br>
@@ -48,8 +50,8 @@
             </p>
 
             <div class="buttons">
-              <button class="btn-primary">Get Started</button>
-              <button class="btn-secondary">Learn More</button>
+              <button id="heroGetStartedBtn" class="btn-primary">Get Started</button>
+              <button id="heroLearnMoreBtn" class="btn-secondary">Learn More</button>
             </div>
           </div>
 
@@ -60,32 +62,34 @@
       </section>
 
       <!-- Upload section -->
-      <section class="upload">
-        <div class="container upload-content">
-          <h2>Upload Your Document</h2>
-          <p>
-            Simply upload your document, and let SummaryAI do the rest. 
-            Our advanced algorithms will analyze your content and provide you with a clear and concise summary in seconds.
-          </p>
+<section class="upload">
+  <div class="upload-content">
+    <h2>Upload Your Document</h2>
+    <p>
+      Simply upload your document, and let SummaryAI do the rest. 
+      Our advanced algorithms will analyze your content and provide you with a clear and concise summary in seconds.
+    </p>
 
-          <div class="upload-box" id="uploadBox">
-            <input type="file" id="fileInput" hidden />
-            <p>Click to upload your document</p>
-          </div>
+    <div class="upload-box" id="uploadBox">
+      <input type="file" id="fileInput" hidden />
 
-          <div class="upload-inner">
-            <div class="icon">☁️</div>
+      <div class="upload-inner">
+        <div class="icon">☁️</div>
 
-            <h3>Click or drag & drop your document here</h3>
-            <span>Supported formats: PDF, DOCX, TXT (Max 25MB)</span>
+        <h3>Click or drag & drop your document here</h3>
+        <span>Supported formats: PDF, DOCX, TXT (Max 25MB)</span>
 
-            <div class="file-types">
-              <span>📄 PDF</span>
-              <span>📘 DOCX</span>
-            </div>
-
-             <p id="fileName"></p>
+        <div class="file-types">
+          <span>📄 PDF</span>
+          <span>📘 DOCX</span>
         </div>
+
+        <p id="fileName"></p>
+      </div>
+    </div>
+
+  </div>
+</section>
       </section>
 
       <!-- How it works -->
@@ -120,24 +124,24 @@
         <div class="container features-content">
 
            <!-- Left: feature cards -->
-          <div class="freature-grid">
+          <div class="feature-grid">
 
-            <div class="freature-card">
+            <div class="feature-card">
               <div class="icon">⚡</div>
               <h3>Fast and Accurate</h3>
               <p>Get concise summaries in seconds, saving you time and effort.</p>
             </div>
-            <div class="freature-card">
+            <div class="feature-card">
               <div class="icon">🔒</div>
               <h3>Secure and Private</h3>
               <p>Your documents are processed securely, ensuring your privacy is protected.</p>
             </div>
-            <div class="freature-card">
+            <div class="feature-card">
               <div class="icon">📁</div>
               <h3>Supports Multiple Formats</h3>
               <p>Upload documents in PDF, DOCX, or TXT formats with ease.</p>
             </div>
-            <div class="freature-card">
+            <div class="feature-card">
               <div class="icon">🌍</div>
               <h3>Multi-language</h3>
               <p>Summarize documents in multiple languages with ease.</p>
@@ -145,7 +149,7 @@
           </div>
 
             <!-- Right: feature description -->
-             <div class="freatures-txt">
+             <div class="features-txt">
               <h2>
                 Why Choose <span>SummaryAI?</span>
               </h2>
@@ -155,10 +159,10 @@
                 making it the perfect tool for anyone looking to save time and improve productivity.
               </p>
 
-              <ul class="freature-list">
-                <li>✔ No credit card required to start</li>
-                <li>✔ User-friendly interface for easy document uploads</li>
-                <li>✔ Advanced AI algorithms for accurate summarization</li>
+              <ul class="feature-list">
+                <li> No credit card required to start</li>
+                <li> User-friendly interface for easy document uploads</li>
+                <li> Advanced AI algorithms for accurate summarization</li>
               </ul>
              </div>
         </div>
@@ -176,31 +180,33 @@
             Say goodbye to information overload and hello to concise, actionable insights.
           </p>
 
-          <button class="btn-primary">Get Started Now</button>
+          <button id="ctaGetStartedBtn" class="btn-primary">Get Started Now</button>
         </div>
       </section>
 
-      <!-- Footer -->
-      <footer class="footer">
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
         <div class="container footer-content">
 
-          <div class="footer-brad">
-            <h2>SummaryAI</h2>
-            <p>© 2026 SummaryAI. All rights reserved.</p>
-          </div>
-          <div class="footer-info">
-            <p>Created by Leticia Alves & Erik Miqueias</p>
-          </div>
-
-          <div class="footer-links">
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="contact.html">Contact</a>
-          </div>
+        <div class="footer-brand">
+           <h2>SummaryAI</h2>
+            <p>
+               Building the future of information processing with advanced artificial intelligence.
+             </p>
         </div>
+
+        <div class="footer-col">
+            <h4>Company</h4>
+              <a href="about.html">About</a>
+              <a href="contact.html">Contact</a>
+        </div>
+
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 SummaryAI. All rights reserved.</p>
+         </div>
       </footer>
-
-
-    </main>
   </body>
 </html>

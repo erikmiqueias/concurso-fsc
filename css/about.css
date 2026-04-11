@@ -1,0 +1,110 @@
+.header {
+  background: var(--surface-container-lowest);
+  border-bottom: 1px solid var(--outline-variant);
+}
+
+.nav-content {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 40px;
+}
+
+/* Logo */
+.logo {
+  font-size: 25px;
+  font-weight: 600;
+  color: var(--on-surface);
+  margin: 0;
+  margin-right: 40px;
+}
+
+/* Centered menu */
+.menu {
+  display: flex;
+  gap: 32px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Right actions */
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-left: 40px;
+}
+.about {
+  padding: 100px 20px;
+  background: var(--surface-container-low);
+}
+
+/* Container */
+.about .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Grid */
+.about-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+/* Title */
+.about-content h2 {
+  grid-column: span 2;
+  text-align: center;
+  font-size: 42px;
+  margin-bottom: 20px;
+  color: var(--on-surface);
+  
+}
+
+/* First block spans full width */
+.about-content .about-block:first-of-type {
+  grid-column: span 2;
+}
+
+/* Cards */
+.about-block {
+  background: var(--surface-container-lowest);
+  padding: 30px;
+  border-radius: 20px;
+  border: 1px solid var(--outline-variant);
+
+  transition: all 0.3s ease;
+}
+
+/* Hover (on mouse over) */
+.about-block:hover {
+  transform: translateY(-8px) scale(1.01);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.05);
+  border-color: var(--primary);
+}
+
+.about-block h3 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+
+
+/* Text */
+.about-block p,
+.about-block li {
+  color: var(--on-surface-variant);
+  line-height: 1.6;
+}
+
+/* List */
+.about-block ul {
+  padding-left: 20px;
+  margin-top: 10px;
+}
+.footer {
+  background: var(--surface-container-high);
+}
