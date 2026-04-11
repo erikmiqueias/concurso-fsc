@@ -5,31 +5,33 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact</title>
   <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/contact.css">
 </head>
 <body>
 
   <!-- Header -->
   <header class="header">
-    <nav class="nav">
-      <div class="container nav-content">
+  <nav class="nav">
+    <div class="container nav-content">
 
-        <h1 class="logo">SummaryAI</h1>
+      <h1 class="logo">SummaryAI</h1>
 
-        <ul class="menu">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html" class="active">Contact</a></li>
-        </ul>
+      <ul class="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html" class="active" aria-current="page">Contact</a></li>
+      </ul>
 
-        <div class="actions">
-          <button class="login">Login</button>
-          <button class="btn-primary">Get Started</button>
-        </div>
-
+      <div class="actions">
+        <button class="login">Login</button>
+        <button class="btn-primary">Get Started</button>
       </div>
-    </nav>
-  </header>
 
+    </div>
+  </nav>
+</header>
+
+  <main>
   <!-- Contact section -->
   <section class="contact">
     <div class="container contact-content">
@@ -45,7 +47,7 @@
       <div class="contact-block">
         <h3>Get in Touch</h3>
 
-        <form action="#" method="post" class="contact-form">
+        <form id="contactForm" action="#" method="post" class="contact-form">
           
           <label for="name">Name:</label>
           <input type="text" id="name" name="name" required />
@@ -56,51 +58,82 @@
           <label for="message">Message:</label>
           <textarea id="message" name="message" rows="5" required></textarea>
 
-          <button type="submit" class="btn-primary">
+          <button id="contactSubmitBtn" type="submit" class="btn-primary">
             Send Message
           </button>
 
         </form>
       </div>
       <!-- Social links -->
-       <div class="contact-social">
-          <h3>Connect with us</h3>
+       <!-- Social links -->
+<div class="contact-social">
+  <h3>Connect with us</h3>
 
-          <div class="social-group">
-            <p><strong>Leticia Alves</strong></p>
+  <div class="social-group">
+    <p><strong>Leticia Alves</strong></p>
 
-            <ul>
-              <li><a href="https://www.linkedin.com/in/leticia954/" target="_blank">LinkedIn</a></li>
-              <li><a href="https://github.com/letxiz" target="_blank">GitHub</a></li>
-            </ul>
-          </div>
+    <ul>
+      <li>
+        <a href="https://www.linkedin.com/in/leticia954/" target="_self" rel="noopener noreferrer" class="social-link">
+          <img src="./assets/linkedin.png" alt="LinkedIn">
+          LinkedIn
+        </a>
+      </li>
 
-          <div class="social-group">
-            <p><strong>Eric Miqueias</strong></p>
+      <li>
+        <a href="https://github.com/letxiz" target="_self" rel="noopener noreferrer" class="social-link">
+          <img src="./assets/github.png" alt="GitHub">
+          GitHub
+        </a>
+      </li>
+    </ul>
+  </div>
 
-            <ul>
-              <li><a href="https://www.linkedin.com/in/erik-miqueias-330471255/" target="_blank">LinkedIn</a></li>
-              <li><a href="https://github.com/erikmiqueias" target="_blank">GitHub</a></li>
-            </ul>
-        </div>
-      </div>
-     </div>
+  <div class="social-group">
+    <p><strong>Erik Miqueias</strong></p>
+
+    <ul>
+      <li>
+        <a href="https://www.linkedin.com/in/erik-miqueias-330471255/" target="_self" rel="noopener noreferrer" class="social-link">
+          <img src="./assets/linkedin.png" alt="LinkedIn">
+          LinkedIn
+        </a>
+      </li>
+
+      <li>
+        <a href="https://github.com/erikmiqueias" target="_self" rel="noopener noreferrer" class="social-link">
+          <img src="./assets/github.png" alt="GitHub">
+          GitHub
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
   </section>
+  </main>
+
 
   <!-- Footer -->
-  <footer class="footer">
-  <div class="container footer-content">
+    <footer class="footer">
+        <div class="container footer-content">
 
-    <div class="footer-brand">
-      <h2>SummaryAI</h2>
-      <p>© 2026 SummaryAI. All rights reserved.</p>
-    </div>
+        <div class="footer-brand">
+           <h2>SummaryAI</h2>
+            <p>
+               Building the future of information processing with advanced artificial intelligence.
+             </p>
+        </div>
 
-    <div class="footer-info">
-      <p>Created by Leticia Alves & Erik Miqueias</p>
-    </div>
+        <div class="footer-col">
+            <h4>Company</h4>
+              <a href="about.html">About</a>
+              <a href="contact.html">Contact</a>
+        </div>
 
-  </div>
-</footer>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 SummaryAI. All rights reserved.</p>
+         </div>
+        </footer>
 </body>
 </html>

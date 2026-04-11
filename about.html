@@ -5,34 +5,44 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About</title>
   <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/about.css">
 </head>
 <body>
   <!-- Navigation -->
   <header class="header">
-   <nav class="nav">
-    
-       <div class="container nav-content">
+  <nav class="nav">
+    <div class="container nav-content">
 
-         <h1 class="logo">SummaryAI</h1>
+      <h1 class="logo">SummaryAI</h1>
 
-         <ul class="menu">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html" class="active">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
+      <ul class="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html" class="active" aria-current="page">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+
+      <div class="actions">
+        <button class="login">Login</button>
+        <button class="btn-primary">Get Started</button>
+      </div>
+
     </div>
-   </nav>
-  </header>
+  </nav>
+</header>
 
+  <main>
   <!-- About section -->
   <section class="about">
     <div class="container about-content">
       
       <h2>About SummaryAI</h2>
 
-      <p class="about-block">
+      <div class="about-block">
+      
+      <p>
         SummaryAI is a cutting-edge tool designed to help you quickly and efficiently summarize your documents. Our advanced AI algorithms analyze your content and provide concise summaries, saving you time and effort.
       </p>
+      </div>
 
       <!-- Mission -->
       <div class="about-block">
@@ -72,22 +82,30 @@
     </div>
   </div>
   </section>
+  </main>
 
+ 
   <!-- Footer -->
-  <footer class="footer">
-  <div class="container footer-content">
+    <footer class="footer">
+        <div class="container footer-content">
 
-    <div class="footer-brand">
-      <h2>SummaryAI</h2>
-      <p>© 2026 SummaryAI. All rights reserved.</p>
-    </div>
+        <div class="footer-brand">
+           <h2>SummaryAI</h2>
+            <p>
+               Building the future of information processing with advanced artificial intelligence.
+             </p>
+        </div>
 
-    <div class="footer-info">
-      <p>Created by Leticia Alves & Eric Miqueias</p>
-    </div>
+        <div class="footer-col">
+            <h4>Company</h4>
+              <a href="about.html">About</a>
+              <a href="contact.html">Contact</a>
+        </div>
 
-  </div>
-</footer>
-  
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 SummaryAI. All rights reserved.</p>
+         </div>
+        </footer>
 </body>
 </html>
