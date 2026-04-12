@@ -14,7 +14,6 @@ body {
 }
 /* Header */
 
-
 /* Default container */
 .container {
   max-width: 1200px;
@@ -212,6 +211,10 @@ body {
   background-color: var(--surface-container-lowest);
 }
 
+.upload.dragger {
+  border-color: var(--primary);
+}
+
 .upload-box:hover {
   background-color: var(--surface-container-low);
 }
@@ -225,6 +228,10 @@ body {
 }
 
 /* Icon */
+.upload-inner {
+  pointer-events: none;
+}
+
 .upload-inner .icon {
   background: var(--secondary-container);
   color: var(--on-secondary-container);
