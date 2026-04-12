@@ -106,9 +106,9 @@ const sendToAI = async (file) => {
     const data = await response.json();
     console.log("Resposta completa do Gemini:", data);
 
-    const resumo = data.candidates[0].content.parts[0].text;
+    const resume = data.candidates[0].content.parts[0].text;
 
-    document.getElementById("resultado").textContent = resumo;
+    document.getElementById("resultado").textContent = resume;
     fileNameDisplay.textContent = `✅ Resumo concluído!`;
   } catch (error) {
     console.error("Erro ao processar com a IA:", error);
