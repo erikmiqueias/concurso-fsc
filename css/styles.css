@@ -223,6 +223,24 @@ body {
   align-items: center;
   gap: 12px;
 }
+.summary-box {
+  margin-top: 40px;
+  padding: 25px;
+  background: var(--surface-container-lowest);
+  border: 1px solid var(--outline-variant);
+  border-radius: 16px;
+  max-width: 800px;
+}
+
+.summary-box h3 {
+  margin-bottom: 15px;
+  color: var(--on-surface);
+}
+
+.summary-box p {
+  color: var(--on-surface-variant);
+  line-height: 1.5;
+}
 
 /* Icon */
 .upload-inner .icon {
@@ -231,6 +249,7 @@ body {
   font-size: 30px;
   padding: 20px;
   border-radius: 50%;
+  margin: 15px;
 }
 
 /* Main text */
