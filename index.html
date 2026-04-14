@@ -11,27 +11,26 @@
     <!-- Navigation -->
     <header class="header">
       <nav class="nav">
-    
-    <div class="nav-content">
-      <div class="container nav-inner">
+        <div class="nav-content">
+          <div class="container nav-inner">
+            <h1 class="logo">SummaryAI</h1>
 
-        <h1 class="logo">SummaryAI</h1>
+            <ul class="menu">
+              <li>
+                <a href="index.html" class="active" aria-current="page">Home</a>
+              </li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
 
-        <ul class="menu">
-          <li><a href="index.html" class="active" aria-current="page">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-
-        <div class="actions">
-          <button class="login">Login</button>
-          <button class="btn-primary">Get Started</button>
+            <div class="actions">
+              <button class="login">Login</button>
+              <button class="btn-primary">Get Started</button>
+            </div>
+          </div>
         </div>
-
-      </div>
-    </div>
-  </nav>
-</header>
+      </nav>
+    </header>
 
     <main>
       <!-- Hero section -->
@@ -39,19 +38,24 @@
         <div class="container hero-content">
           <div class="hero-txt">
             <h2>
-              Your Documents,<br>
+              Your Documents,<br />
               <span>Summarized</span> in Seconds.
             </h2>
 
             <p>
-              Stop spending hours reading through lengthy documents.
-              With SummaryAI, get concise summaries in seconds, so you can focus on what matters most. 
-              Try it now and experience the future of document summarization!
+              Stop spending hours reading through lengthy documents. With
+              SummaryAI, get concise summaries in seconds, so you can focus on
+              what matters most. Try it now and experience the future of
+              document summarization!
             </p>
 
             <div class="buttons">
-              <button id="heroGetStartedBtn" class="btn-primary">Get Started</button>
-              <button id="heroLearnMoreBtn" class="btn-secondary">Learn More</button>
+              <button id="heroGetStartedBtn" class="btn-primary">
+                Get Started
+              </button>
+              <button id="heroLearnMoreBtn" class="btn-secondary">
+                Learn More
+              </button>
             </div>
           </div>
 
@@ -62,41 +66,38 @@
       </section>
 
       <!-- Upload section -->
-<section class="upload">
-  <div class="upload-content">
-    <h2>Upload Your Document</h2>
-    <p>
-      Simply upload your document, and let SummaryAI do the rest. 
-      Our advanced algorithms will analyze your content and provide you with a clear and concise summary in seconds.
-    </p>
-
-    <div class="upload-box" id="uploadBox">
-      <input type="file" id="fileInput" hidden />
-
-      <div class="summary-box" id="summaryBox">
-        <h3>Summary</h3>
-          <p id="summaryText">
-            Your summary will appear here...
+      <section class="upload">
+        <div class="upload-content">
+          <h2>Upload Your Document</h2>
+          <p>
+            Simply upload your document, and let SummaryAI do the rest. Our
+            advanced algorithms will analyze your content and provide you with a
+            clear and concise summary in seconds.
           </p>
-      </div>
 
-      <div class="upload-inner">
-        <div class="icon">☁️</div>
+          <div class="upload-box" id="uploadBox">
+            <input type="file" id="fileInput" hidden />
 
-        <h3>Click or drag & drop your document here</h3>
-        <span>Supported formats: PDF, DOCX, TXT (Max 25MB)</span>
+            <div class="upload-inner">
+              <div class="icon">☁️</div>
 
-        <div class="file-types">
-          <span>📄 PDF</span>
-          <span>📘 DOCX</span>
+              <h3>Click or drag & drop your document here</h3>
+              <span>Supported formats: PDF, DOCX, TXT (Max 25MB)</span>
+
+              <div class="file-types">
+                <span>📄 PDF</span>
+                <span>📘 DOCX</span>
+              </div>
+
+              <p id="fileName"></p>
+            </div>
+          </div>
+          <div class="summary-box" id="summaryBox">
+            <h3>Summary</h3>
+            <p id="summaryText">Your summary will appear here...</p>
+          </div>
         </div>
-
-        <p id="fileName"></p>
-      </div>
-    </div>
-
-  </div>
-</section>
+      </section>
       <!-- How it works -->
       <section class="works">
         <div class="container works-content">
@@ -112,13 +113,19 @@
             <div class="step">
               <div class="icon">⚡</div>
               <h3>AI Summarization</h3>
-              <p>Our advanced AI algorithms analyze your content and generate a concise summary.</p>
+              <p>
+                Our advanced AI algorithms analyze your content and generate a
+                concise summary.
+              </p>
             </div>
 
             <div class="step">
               <div class="icon">✅</div>
               <h3>Get Your Summary</h3>
-              <p>Receive a clear and concise summary in seconds, ready for you to review.</p>
+              <p>
+                Receive a clear and concise summary in seconds, ready for you to
+                review.
+              </p>
             </div>
           </div>
         </div>
@@ -127,19 +134,22 @@
       <!-- Features section -->
       <section class="features">
         <div class="container features-content">
-
-           <!-- Left: feature cards -->
+          <!-- Left: feature cards -->
           <div class="feature-grid">
-
             <div class="feature-card">
               <div class="icon">⚡</div>
               <h3>Fast and Accurate</h3>
-              <p>Get concise summaries in seconds, saving you time and effort.</p>
+              <p>
+                Get concise summaries in seconds, saving you time and effort.
+              </p>
             </div>
             <div class="feature-card">
               <div class="icon">🔒</div>
               <h3>Secure and Private</h3>
-              <p>Your documents are processed securely, ensuring your privacy is protected.</p>
+              <p>
+                Your documents are processed securely, ensuring your privacy is
+                protected.
+              </p>
             </div>
             <div class="feature-card">
               <div class="icon">📁</div>
@@ -153,65 +163,63 @@
             </div>
           </div>
 
-            <!-- Right: feature description -->
-             <div class="features-txt">
-              <h2>
-                Why Choose <span>SummaryAI?</span>
-              </h2>
+          <!-- Right: feature description -->
+          <div class="features-txt">
+            <h2>Why Choose <span>SummaryAI?</span></h2>
 
-              <p>
-                We've designed SummaryAI to be fast, secure, and versatile, 
-                making it the perfect tool for anyone looking to save time and improve productivity.
-              </p>
+            <p>
+              We've designed SummaryAI to be fast, secure, and versatile, making
+              it the perfect tool for anyone looking to save time and improve
+              productivity.
+            </p>
 
-              <ul class="feature-list">
-                <li> No credit card required to start</li>
-                <li> User-friendly interface for easy document uploads</li>
-                <li> Advanced AI algorithms for accurate summarization</li>
-              </ul>
-             </div>
+            <ul class="feature-list">
+              <li>No credit card required to start</li>
+              <li>User-friendly interface for easy document uploads</li>
+              <li>Advanced AI algorithms for accurate summarization</li>
+            </ul>
+          </div>
         </div>
       </section>
 
       <!-- Call to action -->
       <section class="cta">
         <div class="container cta-content">
-          <h2>
-            Ready to Experience the Future of Document Summarization?
-          </h2>
+          <h2>Ready to Experience the Future of Document Summarization?</h2>
 
           <p>
-            Try SummaryAI today and see how it can transform the way you handle documents. 
-            Say goodbye to information overload and hello to concise, actionable insights.
+            Try SummaryAI today and see how it can transform the way you handle
+            documents. Say goodbye to information overload and hello to concise,
+            actionable insights.
           </p>
 
-          <button id="ctaGetStartedBtn" class="btn-primary">Get Started Now</button>
+          <button id="ctaGetStartedBtn" class="btn-primary">
+            Get Started Now
+          </button>
         </div>
       </section>
-
     </main>
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="container footer-content">
-
+      <div class="container footer-content">
         <div class="footer-brand">
-           <h2>SummaryAI</h2>
-            <p>
-               Building the future of information processing with advanced artificial intelligence.
-             </p>
+          <h2>SummaryAI</h2>
+          <p>
+            Building the future of information processing with advanced
+            artificial intelligence.
+          </p>
         </div>
 
         <div class="footer-col">
-            <h4>Company</h4>
-              <a href="about.html">About</a>
-              <a href="contact.html">Contact</a>
+          <h4>Company</h4>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
         </div>
-
-        </div>
-        <div class="footer-bottom">
-            <p>© 2026 SummaryAI. All rights reserved.</p>
-         </div>
-      </footer>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 SummaryAI. All rights reserved.</p>
+      </div>
+    </footer>
   </body>
 </html>

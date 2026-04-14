@@ -1,7 +1,7 @@
 const uploadBox = document.getElementById("uploadBox");
 const fileInput = document.getElementById("fileInput");
 const fileNameDisplay = document.getElementById("fileName");
-const resumeDisplay = document.getElementById("result");
+const resumeDisplay = document.getElementById("summaryText");
 
 const preventDefaults = (e) => {
   e.preventDefault();
@@ -55,7 +55,7 @@ const processFiles = (files) => {
   }
 };
 
-const GEMINI_API_KEY = "MINHA_CHAVE_DE_API";
+const GEMINI_API_KEY = "AIzaSyCb6RYwYHS0phZzFhfvzLucq1d4LHxI_18";
 
 const fileToGenerativePart = (file) => {
   return new Promise((resolve) => {
@@ -108,7 +108,7 @@ const sendToAI = async (file) => {
 
     const resume = data.candidates[0].content.parts[0].text;
 
-    document.getElementById("resultado").textContent = resume;
+    resumeDisplay.textContent = resume;
     fileNameDisplay.textContent = `✅ Resumo concluído!`;
   } catch (error) {
     console.error("Erro ao processar com a IA:", error);
