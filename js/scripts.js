@@ -50,12 +50,12 @@ const processFiles = (files) => {
   if (arrayFiles.length > 0) {
     sendToAI(arrayFiles[0]);
   } else {
-    alert("Erro ao enviar o arquivo");
+    alert("Error uploading the file");
     return;
   }
 };
 
-const GEMINI_API_KEY = "MINHA_CHAVE_DE_API";
+const GEMINI_API_KEY = "your-actual-api-key-here";
 
 const fileToGenerativePart = (file) => {
   return new Promise((resolve) => {
@@ -74,7 +74,7 @@ const fileToGenerativePart = (file) => {
 };
 
 const sendToAI = async (file) => {
-  fileNameDisplay.textContent = `O Gemini está lendo: ${file.name} ⏳...`;
+  fileNameDisplay.textContent = `Gemini is reading: ${file.name} ⏳...`;
 
   try {
     const filePart = await fileToGenerativePart(file);
@@ -90,7 +90,7 @@ const sendToAI = async (file) => {
           contents: [
             {
               parts: [
-                { text: "Faça um resumo claro e conciso deste documento." },
+                { text: "Summarize this document in the same language as the original document." },
                 filePart,
               ],
             },
@@ -100,18 +100,18 @@ const sendToAI = async (file) => {
     );
 
     if (!response.ok) {
-      throw new Error(`Erro na API: ${response.status}`);
+      throw new Error(`API error: ${response.status}`);
     }
 
     const data = await response.json();
-    console.log("Resposta completa do Gemini:", data);
+    console.log("Complete response from Gemini:", data);
 
     const resume = data.candidates[0].content.parts[0].text;
 
     resumeDisplay.textContent = resume;
-    fileNameDisplay.textContent = `✅ Resumo concluído!`;
+    fileNameDisplay.textContent = `✅ Summary completed!`;
   } catch (error) {
-    console.error("Erro ao processar com a IA:", error);
-    fileNameDisplay.textContent = `❌ Falha ao resumir o arquivo.`;
+    console.error("Error processing with AI:", error);
+    fileNameDisplay.textContent = `❌ Failed to summarize the file.`;
   }
 };
